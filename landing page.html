@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id"> <!-- Menentukan tipe dokumen dan bahasa halaman -->
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan karakter encoding sebagai UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur responsivitas halaman pada perangkat mobile -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Mengatur kompatibilitas dengan Internet Explorer -->
+    <title>Tips Belajar Efektif</title> <!-- Judul halaman yang muncul di tab browser -->
+    <style>
+        /* Reset margin dan padding untuk semua elemen */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Menghitung padding dan border dalam lebar elemen */
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* Mengatur font untuk seluruh halaman */
+            line-height: 1.6; /* Mengatur tinggi baris */
+            background-color: #EBD3F8; /* Warna latar belakang yang lembut */
+        }
+
+        .container {
+            width: 100%; /* Mengatur lebar kontainer menjadi 100% dari lebar layar */
+            max-width: 1200px; /* Mengatur lebar maksimum kontainer */
+            margin: 0 auto; /* Mengatur margin agar kontainer terpusat */
+            padding: 20px; /* Memberikan ruang di dalam kontainer */
+            text-align: center; /* Mengatur teks di dalam kontainer menjadi rata tengah */
+        }
+
+        header {
+            background-color: #2E073F; /* Warna latar belakang header */
+            color: #EBD3F8; /* Warna teks di header */
+            padding: 20px 0; /* Memberikan ruang atas dan bawah di header */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Menambahkan bayangan di bawah header */
+        }
+
+        header h1 {
+            font-size: 2.5rem; /* Ukuran font judul di header */
+            color: #AD49E1; /* Warna aksen untuk judul */
+        }
+
+        header p {
+            font-size: 1.2rem; /* Ukuran font untuk paragraf di header */
+            margin-top: 10px; /* Memberikan ruang atas untuk paragraf */
+            color: #EBD3F8; /* Warna teks paragraf di header */
+        }
+
+        .cta-button {
+            margin-top: 20px; /* Memberikan ruang atas untuk tombol */
+            padding: 15px 30px; /* Memberikan ruang dalam tombol */
+            font-size: 1.2rem; /* Ukuran font untuk tombol */
+            background-color: #7A1CAC; /* Warna latar belakang tombol */
+            color: #EBD3F8; /* Warna teks tombol */
+            border: none; /* Menghapus border tombol */
+            border-radius: 5px; /* Membuat sudut tombol menjadi melengkung */
+            cursor: pointer; /* Mengubah kursor saat hover di tombol */
+            text-decoration: none; /* Menghapus garis bawah pada link */
+        }
+
+        .cta-button:hover {
+            background-color: #AD49E1; /* Warna tombol saat hover */
+        }
+
+        .testimonials {
+            margin-top: 50px; /* Memberikan ruang atas untuk bagian testimoni */
+        }
+
+        .testimonials h2 {
+            font-size: 2rem; /* Ukuran font untuk judul testimoni */
+            margin-bottom: 20px; /* Memberikan ruang bawah untuk judul testimoni */
+            color: #7A1CAC; /* Warna judul testimoni */
+        }
+
+        .testimonial-grid {
+            display: grid; /* Mengatur testimoni dalam grid */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Mengatur kolom grid responsif */
+            grid-gap: 20px; /* Memberikan jarak antar elemen grid */
+        }
+
+        .testimonial {
+            background-color: #FFFFFF; /* Warna latar belakang untuk setiap testimoni */
+            padding: 20px; /* Memberikan ruang dalam setiap testimoni */
+            border-radius: 5px; /* Membuat sudut testimoni menjadi melengkung */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Menambahkan bayangan pada testimoni */
+        }
+
+        .testimonial p {
+            font-style: italic; /* Mengatur teks dalam gaya miring */
+            color: #2E073F; /* Warna teks isi testimoni */
+        }
+
+        .testimonial h3 {
+            margin-top: 15px; /* Memberikan ruang atas untuk nama pengguna */
+            color: #7A1CAC; /* Warna untuk nama pengguna */
+        }
+
+        footer {
+            background-color: #2E073F; /* Warna latar belakang footer */
+            color: #EBD3F8; /* Warna teks di footer */
+            padding: 10px 0; /* Memberikan ruang atas dan bawah di footer */
+            text-align: center; /* Mengatur teks di footer menjadi rata tengah */
+        }
+
+        footer p {
+            font-size: 0.9rem; /* Ukuran font untuk teks di footer */
+        }
+
+        footer .social-icons {
+            margin-top: 10px; /* Memberikan ruang atas untuk ikon sosial */
+        }
+
+        footer .social-icons a {
+            color: #EBD3F8; /* Warna untuk tautan ikon sosial */
+            text-decoration: none; /* Menghapus garis bawah pada tautan */
+            font-size: 1.5rem; /* Ukuran font untuk ikon sosial */
+            margin: 0 10px; /* Memberikan jarak antar ikon sosial */
+            transition: color 0.3s; /* Efek transisi saat warna berubah */
+        }
+
+        footer .social-icons a:hover {
+            color: #AD49E1; /* Warna saat hover pada ikon sosial */
+        }
+
+        .hero {
+            background: url('https://example.com/your-image.jpg') no-repeat center center/cover; /* Latar belakang dengan gambar */
+            height: 60vh; /* Tinggi hero section */
+            display: flex; /* Mengatur layout menggunakan flexbox */
+            flex-direction: column; /* Mengatur arah elemen dalam kolom */
+            align-items: center; /* Mengatur konten agar terpusat secara horizontal */
+            justify-content: center; /* Mengatur konten agar terpusat secara vertikal */
+            color: white; /* Warna teks di hero section */
+            text-align: center; /* Mengatur teks di hero menjadi rata tengah */
+        }
+
+        .hero-text {
+            font-size: 3rem; /* Ukuran font untuk teks hero */
+            font-weight: bold; /* Mengatur teks menjadi tebal */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan pada teks */
+            color: #EBD3F8; /* Warna teks hero */
+        }
+
+        @media only screen and (max-width: 768px) { /* Mengatur responsivitas untuk layar kecil */
+            header h1 {
+                font-size: 2rem; /* Ukuran font judul di header untuk layar kecil */
+            }
+
+            header p {
+                font-size: 1rem; /* Ukuran font paragraf di header untuk layar kecil */
+            }
+
+            .cta-button {
+                font-size: 1rem; /* Ukuran font untuk tombol di layar kecil */
+                padding: 10px 20px; /* Mengurangi padding pada tombol di layar kecil */
+            }
+
+            .hero-text {
+                font-size: 2rem; /* Ukuran font untuk teks hero di layar kecil */
+            }
+
+            footer {
+                font-size: 0.8rem; /* Ukuran font untuk footer di layar kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Selamat Datang di Tips Belajar Efektif</h1> <!-- Judul utama di header -->
+            <p>Dapatkan tips dan trik terbaik untuk belajar secara efisien dan produktif!</p> <!-- Deskripsi di header -->
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-text">Siap Menjadi Pelajar Terbaik?</div> <!-- Teks utama di hero section -->
+        <a href="login.html" class="cta-button">Mulai Belajar</a> <!-- Tombol yang mengarah ke bagian utama -->
+    </div>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Testimoni Pengguna</h2> <!-- Judul bagian testimoni -->
+            
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Website ini sangat membantu saya mengatur jadwal belajar dan mempersiapkan diri untuk ujian. Tips-tipsnya sangat praktis dan mudah diikuti."</p>
+                    <h3>- Budi, Mahasiswa</h3> <!-- Nama pengguna -->
+                </div>
+
+                <div class="testimonial">
+                    <p>"Saya bisa lebih fokus belajar dan memanfaatkan waktu dengan baik berkat saran yang diberikan di sini."</p>
+                    <h3>- Siti, Pelajar SMA</h3> <!-- Nama pengguna -->
+                </div>
+
+                <div class="testimonial">
+                    <p>"Tips-tips di website ini sangat membantu saya mengatur waktu dan menjaga produktivitas saya sebagai pelajar."</p>
+                    <h3>- Amir, Mahasiswa Teknik</h3> <!-- Nama pengguna -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tips Belajar Efektif | All Rights Reserved</p> <!-- Teks hak cipta di footer -->
+
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">&#x1F465; Instagram</a> <!-- Ikon Instagram dengan tautan -->
+            <a href="https://twitter.com" target="_blank">&#x1F426; X</a> <!-- Ikon Twitter dengan tautan -->
+        </div>
+    </footer>
+
+</body>
+</html>
