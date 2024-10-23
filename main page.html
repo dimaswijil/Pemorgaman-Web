@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Halaman Utama - Tips Belajar Efektif</title>
+    
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
         /* Reset margin dan padding */
         * {
@@ -88,12 +92,23 @@
         footer {
             background-color: #2E073F;
             color: #EBD3F8;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         footer p {
-            margin: 0;
+            margin: 5px 0;
+            font-size: 0.9rem;
         }
 
         footer .social-icons {
@@ -104,12 +119,16 @@
             color: #EBD3F8;
             text-decoration: none;
             font-size: 1.5rem;
-            margin: 0 10px;
+            margin: 0 15px;
             transition: color 0.3s;
         }
 
         footer .social-icons a:hover {
             color: #AD49E1;
+        }
+
+        footer .social-icons i {
+            font-size: 2rem;
         }
 
         @media (max-width: 768px) {
@@ -168,14 +187,22 @@
         </section>
     </div>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Tips Belajar Efektif | All Rights Reserved</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Tips Belajar Efektif | All Rights Reserved</p>
 
-        <div class="social-icons">
-            <a href="https://instagram.com" target="_blank">&#x1F465; Instagram</a>
-            <a href="https://twitter.com" target="_blank">&#x1F426; X</a>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter (X)">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+            </div>
         </div>
     </footer>
 
 </body>
 </html>
+ 
