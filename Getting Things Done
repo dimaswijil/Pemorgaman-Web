@@ -1,0 +1,71 @@
+<html>
+ <head>
+  <title>Getting Things Done (GTD)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="heading">
+   <h1>Getting Things Done (GTD)</h1>
+   <p>Sistematisasikan kekacauan di otakmu dan selesaikan tugas-tugasmu.</p>
+   </div>
+   <div class="image-container">
+    <img alt="Illustration of a person with a GTD jacket looking at a book, surrounded by various icons representing tasks and organization." height="400" src="https://storage.googleapis.com/a1aa/image/5a8FndoE7U5lNRzIuKMwNHeFmuN1PXXppXnAn1yU5eawSeTnA.jpg" width="800"/>
+    </div>
+    <div class="about-content">
+      <h2>Apa yang dimaksud oleh Getting Things Done?</h2>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+      <p>Apakah kamu pernah merasa seperti menghabiskan lebih banyak waktu memikirkan tugas-tugasmu daripada, ya…benar-benar melakukannya? Khawatir tentang segala sesuatu dalam daftar tugasmu bisa melelahkan, terutama ketika daftar itu tidak kunjung berkurang. Ketika informasi menumpuk di kepala Anda, Anda merasa stres, kewalahan, dan tidak pasti.</p>
+      <p>Getting Things Done — atau GTD untuk singkatnya — adalah sistem manajemen tugas yang populer yang dibuat oleh konsultan produktivitas David Allen berdasarkan kebenaran sederhana: semakin banyak informasi yang berputar-putar di dalam kepala Anda, semakin sulit untuk memutuskan apa yang harus dilakukan terlebih dahulu.</p>
+      
+      <p>Allen mengamati bahwa otak kita jauh lebih baik dalam memproses informasi daripada menyimpannya ("kepalamu adalah kantor yang buruk"). Metode GTD menyusun alur kerja di mana Anda dapat membuang semua kekacauan mental ini ke dalam sistem eksternal dan mengaturnya sehingga Anda dapat dengan percaya diri menjawab "Apa yang harus saya kerjakan?" pada saat tertentu tanpa khawatir Anda mungkin lupa sesuatu yang penting yang perlu Anda lakukan nanti.</p>
+    
+    </div>
+   </div>
+   </body>
+   </html>
+ 
+ </body>
+ </html>
