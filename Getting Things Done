@@ -40,32 +40,122 @@
    <p>Sistematisasikan kekacauan di otakmu dan selesaikan tugas-tugasmu.</p>
    </div>
    <div class="image-container">
-    <img alt="Illustration of a person with a GTD jacket looking at a book, surrounded by various icons representing tasks and organization." height="400" src="https://storage.googleapis.com/a1aa/image/5a8FndoE7U5lNRzIuKMwNHeFmuN1PXXppXnAn1yU5eawSeTnA.jpg" width="800"/>
-    </div>
+    <img class="img-GTD" src="GTD.jpg" width 150px alt="GTD" height: 100px>
     <div class="about-content">
       <h2>Apa yang dimaksud oleh Getting Things Done?</h2>
       <style>
+      {
+        margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+      }
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            color: #333;
+          background-color: #EBD3F8;
+          
         }
-        p {
-            margin-bottom: 20px;
+        .heading{
+          width;90%
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: coloumn;
+          text-align: center;
+          margin:20px auto;
+        }
+        .heading h1{
+          font-size: 50px;
+          color: #000;
+          margin-bottom: 25px;
+          position: relative;
+        }
+        .heading h1::after{
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          display: block;
+          margin:0 auto;
+          background-color: #AD49E1;
+        }
+        .heading p{
+          font-size: 18px;
+          color:#AD49E1;
+          margin-bottom: 35px;
+        }
+        .container{
+          width: 90%;
+          margin:0 auto;
+          padding:10px 20px;
+        }
+        .about{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .about-image{
+          flex:1;
+          margin-right: 40px;
+          overflow: hidden;
+        }
+        .about-image{
+          max-width: 100%;
+          height: auto;
+          display: block;
+          transition: 0.5s ease;
+        }
+        .about-image:hover img{
+          transform: scale(1.2);
+        }
+        .about-content{
+          flex:1;
+        }
+        .about-content h2{
+          font-size: 23px;
+          margin-bottom:15px;
+          color: #333;
+        }
+        .about-content p{
+          font-size: 18px;
+          line-height: 1.5;
+          color: :#666;
+        }
+        media screen and (max-width: 768px){
+          .heading{
+            padding:0px 20px;
+          }
+          .heading h1{
+            font-size: 36px;
+          }
+          .heading p{
+            font-size: 17px;
+            margin-bottom: 0px;
+          }
+          .container{
+            padding:0px;
+        }
+        .about{
+          padding:20px;
+          flex-direction: coloumn;
+        }
+        .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+        }
+        .about-content p{
+          padding:0px;
+          font-size: 16px;
         }
     </style>
 </head>
 <body>
       <p>Apakah kamu pernah merasa seperti menghabiskan lebih banyak waktu memikirkan tugas-tugasmu daripada, ya…benar-benar melakukannya? Khawatir tentang segala sesuatu dalam daftar tugasmu bisa melelahkan, terutama ketika daftar itu tidak kunjung berkurang. Ketika informasi menumpuk di kepala Anda, Anda merasa stres, kewalahan, dan tidak pasti.</p>
       <p>Getting Things Done — atau GTD untuk singkatnya — adalah sistem manajemen tugas yang populer yang dibuat oleh konsultan produktivitas David Allen berdasarkan kebenaran sederhana: semakin banyak informasi yang berputar-putar di dalam kepala Anda, semakin sulit untuk memutuskan apa yang harus dilakukan terlebih dahulu.</p>
-      
       <p>Allen mengamati bahwa otak kita jauh lebih baik dalam memproses informasi daripada menyimpannya ("kepalamu adalah kantor yang buruk"). Metode GTD menyusun alur kerja di mana Anda dapat membuang semua kekacauan mental ini ke dalam sistem eksternal dan mengaturnya sehingga Anda dapat dengan percaya diri menjawab "Apa yang harus saya kerjakan?" pada saat tertentu tanpa khawatir Anda mungkin lupa sesuatu yang penting yang perlu Anda lakukan nanti.</p>
-    
     </div>
    </div>
    </body>
    </html>
- 
  </body>
  </html>
