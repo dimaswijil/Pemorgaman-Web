@@ -6,7 +6,7 @@
     <title>Teknik Pomodoro</title>
     <link rel="stylesheet" href="styles.css">
 
-  <style>
+   <style>
   {
             margin: 0;
             padding: 0;
@@ -14,15 +14,17 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #EBD3F8;
+            background: #E2DAD6;
+            color: #EF4F6FF;
         }
 
 header {
-    background: #9B7EBD;
-    color: #EBD3F8;
+    background: #7FA1C3;
+    color: #091057;
     padding: 20px;
     text-align: center;
 }
+
 
 header nav ul {
     list-style: none;
@@ -34,10 +36,18 @@ header nav ul li {
     margin: 0 15px;
 }
 
-header nav ul li a {
-    color: #EBD3F8;
-    text-decoration: none;
-}
+        nav {
+            background-color: #091057;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #FDFAD9;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
 
 
 main {
@@ -50,6 +60,11 @@ main {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
+        .main-content h2 {
+            color: #2E073F;
+            margin-bottom: 20px;
+        }
+
 h1, h2 {
     color: #35424a;
 }
@@ -59,8 +74,8 @@ section {
 }
 
 footer {
-            background-color: #2E073F;
-            color: #EBD3F8;
+            background-color: #091057;
+            color: #FDFAD9;
             padding: 20px 0;
             text-align: center;
             display: flex;
