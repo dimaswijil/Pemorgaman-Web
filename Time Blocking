@@ -6,8 +6,8 @@
     <title>TIME BLOCKING</title>
     <link rel="stylesheet" href="styles.css">
 
-  <style>
-  {
+    <style>
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -15,31 +15,30 @@
         body {
             font-family: Arial, sans-serif;
             background: #E2DAD6;
-            color: #EF4F6FF;
+            color:EF4F6FF;
+        }
+        header {
+            background: #7FA1C3;
+            color: #091057;
+            padding: 20px;
+            text-align: center;
         }
 
-header {
-    background: #7FA1C3;
-    color: #091057;
-    padding: 20px;
-    text-align: center;
-}
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
 
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
         nav {
             background-color: #091057;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
+            margin-top: 10px;
         }
         
         nav a {
@@ -49,31 +48,30 @@ header nav ul li {
             font-size: 1.1rem;
         }
 
-
-main {
-    margin: 20px auto;
-    padding:30px;
-    color: #2E073F;
-    background: #ffffff;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-}
+        main {
+            margin: 20px auto;
+            padding: 30px;
+            color: #2E073F;
+            background: #ffffff;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        }
 
         .main-content h2 {
             color: #2E073F;
             margin-bottom: 20px;
         }
 
-h1, h2 {
-    color: #35424a;
-}
+        h1, h2 {
+            color: #35424a;
+        }
 
-section {
-    margin-bottom: 20px;
-}
+        section {
+            margin-bottom: 20px;
+        }
 
-footer {
+        footer {
             background-color: #091057;
             color: #FDFAD9;
             padding: 20px 0;
@@ -124,18 +122,18 @@ footer {
                 font-size: 1rem;
             }
         }
-  </style>
+    </style>
 </head>
 <body>
     <header>
         <h1>Time Blocking</h1>
-   <p>Sistematisasikan kekacauan di otakmu dan selesaikan tugas-tugasmu.</p>
+        <p>Sistematisasikan kekacauan di otakmu dan selesaikan tugas-tugasmu.</p>
         <nav>
             <ul>
                 <li><a href="#TM">Apa itu Time Blocking</a></li>
                 <li><a href="#Aturan">Aturan Time Blocking</a></li>
-                <li><a href="#Cara kerja">Cara Kerja</a></a></li>
-                <li><a href="#Tips Time Blocking">Tips Time Blocking</a></li>
+                <li><a href="#CaraKerja">Cara Kerja</a></li>
+                <li><a href="#TipsTimeBlocking">Tips Time Blocking</a></li>
                 <li><a href="#Manfaat">Manfaat dan Kelebihan</a></li>
             </ul>
         </nav>
@@ -160,7 +158,7 @@ footer {
             </ul>
         </section>
 
-        <section id="Cara kerja">
+        <section id="CaraKerja">
             <h2>Cara Kerja Time Blocking</h2>
             <p>Time blocking bekerja dengan cara membuat jadwal detail untuk setiap jam kerja Anda. Berikut langkah-langkah umumnya:</p>
             <ul>
@@ -171,29 +169,30 @@ footer {
                 <li>Jalankan Blok Waktu dengan Disiplin: Usahakan untuk tidak tergoda melakukan tugas lain di luar blok waktu yang sudah direncanakan.</li>
             </ul>
         </section>
-        
-        <section id="Tips Tim Blocking">
-          <h2>Tips Cepat Menggunakan Time Blocking</h2>
-          <p>Berikut adalah beberapa tips cepat untuk mengoptimalkan teknik time blocking:</P>
-          <ul>
-            <li>Gunakan aplikasi: Manfaatkan aplikasi seperti Google Calendar atau Notion untuk membantu mengatur jadwal blok waktu.</li>
-            <li>Tetapkan blok untuk komunikasi: Blok waktu tertentu untuk membalas email atau berkomunikasi, agar tidak terganggu di waktu lain.</li>
-            <li>Mulailah dari yang kecil: Untuk pemula, coba gunakan blok 15–30 menit per tugas dan tingkatkan durasinya secara bertahap.</li>
-            <li>Sisakan waktu kosong (buffer): Antara dua blok yang padat, sisakan waktu kosong agar Anda dapat bersantai atau menyesuaikan diri jika ada perubahan.</li>
-          </ul>
+
+        <section id="TipsTimeBlocking">
+            <h2>Tips Cepat Menggunakan Time Blocking</h2>
+            <p>Berikut adalah beberapa tips cepat untuk mengoptimalkan teknik time blocking:</p>
+            <ul>
+                <li>Gunakan aplikasi: Manfaatkan aplikasi seperti Google Calendar atau Notion untuk membantu mengatur jadwal blok waktu.</li>
+                <li>Tetapkan blok untuk komunikasi: Blok waktu tertentu untuk membalas email atau berkomunikasi, agar tidak terganggu di waktu lain.</li>
+                <li>Mulailah dari yang kecil: Untuk pemula, coba gunakan blok 15–30 menit per tugas dan tingkatkan durasinya secara bertahap.</li>
+                <li>Sisakan waktu kosong (buffer): Antara dua blok yang padat, sisakan waktu kosong agar Anda dapat bersantai atau menyesuaikan diri jika ada perubahan.</li>
+            </ul>
         </section>
         
         <section id="Manfaat">
-          <h2>Manfaat dan Kelebihan Time Blocking</h2>
-          <p>Dengan menggunakan time blocking, Anda dapat:</p>
-          <ul>
-            <li>Meningkatkan fokus pada satu tugas dalam satu waktu.</li>
-            <li>Mengurangi waktu yang terbuang karena berpindah-pindah tugas (context switching).</li>
-            <li>Mencapai tujuan harian secara lebih efektif karena setiap waktu dimanfaatkan maksimal.</li>
-          </ul>
-          <p>Teknik ini sangat cocok bagi pelajar, mahasiswa, maupun profesional yang memiliki banyak tugas dan perlu memastikan produktivitas mereka tetap tinggi tanpa mudah terdistraksi.</p>
+            <h2>Manfaat dan Kelebihan Time Blocking</h2>
+            <p>Dengan menggunakan time blocking, Anda dapat:</p>
+            <ul>
+                <li>Meningkatkan fokus pada satu tugas dalam satu waktu.</li>
+                <li>Mengurangi waktu yang terbuang karena berpindah-pindah tugas (context switching).</li>
+                <li>Mencapai tujuan harian secara lebih efektif karena setiap waktu dimanfaatkan maksimal.</li>
+            </ul>
+            <p>Teknik ini sangat cocok bagi pelajar, mahasiswa, maupun profesional yang memiliki banyak tugas dan perlu memastikan produktivitas mereka tetap tinggi tanpa mudah terdistraksi.</p>
         </section>
     </main>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 Tips Belajar Efektif | All Rights Reserved</p>
