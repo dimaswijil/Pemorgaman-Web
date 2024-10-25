@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="styles.css">
+
+   <style>
+  {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #E2DAD6;
+            color: #EF4F6FF;
+        }
+
+header {
+    background: #7FA1C3;
+    color: #091057;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+        nav {
+            background-color: #091057;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #FDFAD9;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+
+
+main {
+    margin: 20px auto;
+    padding:30px;
+    color: #2E073F;
+    background: #ffffff;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+        .main-content h2 {
+            color: #2E073F;
+            margin-bottom: 20px;
+        }
+
+h1, h2 {
+    color: #35424a;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+            background-color: #091057;
+            color: #FDFAD9;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            color: #EBD3F8;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: #AD49E1;
+        }
+
+        footer .social-icons i {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 10px;
+            }
+
+            .main-content p {
+                font-size: 1rem;
+            }
+        }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Kanban</h1>
+        <p>Pindahkan proyek Anda melalui alur visual dari awal hingga akhir</p>
+        <nav>
+            <ul>
+                <li><a href="#Kanban">Apa itu papan Kanban?</a></li>
+                <li><a href="#Papan kanban">Menyiapkan papan Kanban Anda</a></li>
+                <li><a href="#Alat kanban">Pilih alat Kanban Anda</a></a></li>
+                <li><a href="#Tips kanban">Tips Efektivitas Kanban</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Kanban">
+            <h2>Apa itu papan Kanban?</h2>
+            <p>Metode Kanban adalah alur kerja produktivitas visual, menggunakan papan dan kartu, yang memberikan gambaran umum tentang tugas proyek, dari awal hingga akhir, sehingga tidak ada yang hilang dalam pengacakan.</p>
+            <p>Di pusat metode Kanban adalah papan Kanban. Papan Kanban memplot item kerja Anda sebagai kartu yang diatur ke dalam kolom yang mewakili fase proyek yang berbeda. Misalnya, papan Kanban sederhana dapat terdiri dari hanya tiga kolom: "melakukan", "melakukan", dan "selesai". Anda kemudian memindahkan kartu Anda melintasi kolom dari kiri ke kanan saat item kerja berkembang melalui setiap fase proyek.</p>
+            <p>Kartu Kanban Anda adalah item kerja spesifik yang dipindahkan melalui langkah-langkah alur kerja yang Anda tentukan. Dalam contoh alur penerbitan konten di atas, kartu Kanban Anda akan menjadi judul setiap artikel. Untuk alur perekrutan, Anda dapat menggunakan nama kandidat sebagai kartu Kanban Anda. Dalam papan "To-Do → Doing → Done" sederhana, setiap kartu akan menjadi tugas yang harus diselesaikan.</p>
+        </section>
+
+        <section id="Papan kanban">
+            <h2>Menyiapkan papan Kanban Anda</h2>
+            <ul>
+                <li>Pilih papan kanban Anda!</li>
+                <li>Tetapkan alur kerja Anda berdasarkan proses proyek Anda</li>
+                <li>Buat kartu kanban dengan mempertimbangkan tugas Anda</li>
+                <li>Pindahkan kartu kanban Anda ke kanan saat Anda membuat kemajuan</li>
+                <li>Pertimbangkan kartu kanban Anda secara keseluruhan</li>
+            </ul>
+        </section>
+
+        <section id="Alat kanban">
+            <h2>Pilih alat Kanban Anda</h2>
+            <p>Punya pena dan kertas? Gambar kolom Anda di papan tulis atau papan poster besar, lalu tuliskan tugas Anda di catatan tempel. Tempatkan catatan tempel Anda di kolom kanan dan pindahkan ke papan saat Anda pergi.</p>
+            <p>Papan fisik bisa menjadi pilihan yang baik untuk individu yang menyukai pena dan kertas atau tim terpusat yang bekerja di tempat yang sama. Mereka juga bekerja paling baik untuk sprint atau proyek jangka pendek. Mereka tidak ideal untuk tim terdistribusi yang bekerja di tempat yang berbeda atau untuk rekan tim yang kadang-kadang bekerja dari rumah.</p>
+        </section>
+        
+        <section id="Tips kanban">
+          <h2>Tips cepat untuk Kanban</h2>
+          <ol>
+            <li>Atur backlog Anda berdasarkan prioritas.</li>
+            <li>Selalu perbarui papan Anda.</li>
+            <li>Batasi kartu Kanban untuk satu orang dalam satu waktu.</li>
+            <li>Jaga agar papan Kanban tetap terlihat jelas.</li>
+          </ol>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tips Belajar Efektif | All Rights Reserved</p>
+
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter (X)">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
