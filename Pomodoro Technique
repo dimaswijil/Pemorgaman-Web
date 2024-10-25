@@ -129,6 +129,7 @@ footer {
 <body>
     <header>
         <h1>Teknik Pomodoro</h1>
+<p>Sistematisasikan kekacauan di otak Anda dan selesaikan sesuatu.</p>
         <nav>
             <ul>
                 <li><a href="#pomodoro">Apa itu Teknik Pomodoro</a></li>
