@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectives Key & Result</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #E2DAD6;
+            color:EF4F6FF;
+        }
+        header {
+            background: #7FA1C3;
+            color: #091057;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav {
+            background-color: #091057;
+            padding: 20px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        nav a {
+            color: #FDFAD9;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+
+        main {
+            margin: 20px auto;
+            padding: 30px;
+            color: #2E073F;
+            background: #ffffff;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content h2 {
+            color: #2E073F;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #35424a;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #091057;
+            color: #FDFAD9;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            color: #EBD3F8;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: #AD49E1;
+        }
+
+        footer .social-icons i {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 10px;
+            }
+
+            .main-content p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> OKR (Objectives Key & Result)</h1>
+        <p>Sistematisasikan kekacauan di otakmu dan selesaikan tugas-tugasmu.</p>
+        <nav>
+            <ul>
+                <li><a href="#TM">Apa itu OKR </a></li>
+                <li><a href="#Aturan">Aturan OKR</a></li>
+                <li><a href="#CaraKerja">Cara Kerja</a></li>
+                <li><a href="#TipsOKR">Tips OKR</a></li>
+                <li><a href="#Manfaat">Manfaat dan Kelebihan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="TM">
+            <h2>Apa itu OKR?</h2>
+            <p>Objective Key Results (OKR) adalah teknik manajemen yang sering dipakai untuk menentukan tujuan (objectives) dan hasil kunci (key results) yang terukur. </p>
+            <p>Teknik ini membantu dalam menetapkan sasaran yang jelas dan menilai pencapaiannya berdasarkan hasil spesifik. Dalam konteks belajar, OKR dapat diterapkan untuk mencapai target akademik atau keterampilan secara lebih terstruktur dan terukur.</p>
+        </section>
+
+        <section id="Aturan">
+            <h2>Aturan OKR</h2>
+            <p>Beberapa aturan umum dalam menggunakan teknik Objectives Key & Result meliputi:</p>
+            <ul>
+                <li>Definisikan Objective yang Jelas: Tujuan harus spesifik, relevan, dan menantang namun bisa dicapai.</li>
+                <li>Tetapkan Key Results yang Terukur: Setiap Key Result perlu memiliki tolok ukur yang jelas, sehingga kita dapat memantau kemajuan secara obyektif.</li>
+                <li>Evaluasi Secara Berkala: OKR membutuhkan peninjauan secara berkala untuk memastikan bahwa tujuan masih relevan atau apakah ada hasil kunci yang perlu disesuaikan.</li>
+                <li>Fokus pada Prioritas: Jangan menetapkan terlalu banyak OKR sekaligus agar tetap fokus pada yang paling penting.</li>
+            </ul>
+        </section>
+
+        <section id="CaraKerja">
+            <h2>Cara Kerja Objectives Key & Result </h2>
+            <p>Berikut adalah cara kerja Objective Key Results (OKR):</p>
+            <ul>
+                <li>Tentukan Tujuan Belajar (Objective): Contohnya, “Meningkatkan pemahaman dalam topik Matematika Dasar”.</li>
+                <li>Tentukan Key Results: Misalnya, “Memahami konsep dasar aljabar”, “Menyelesaikan 5 soal latihan setiap minggu”, dan “Mencapai nilai minimum 90 dalam tes bulanan.”</li>
+                <li>Monitor dan Evaluasi: Periksa hasil secara berkala, apakah tiap Key Result telah tercapai, atau apa yang perlu diperbaiki.</li>
+                <li>Refleksi dan Penyesuaian: Di akhir periode, refleksi kemajuan atau hambatan untuk perbaikan OKR berikutnya.</li>
+            </ul>
+        </section>
+
+        <section id="TipsOKR">
+            <h2>Tips Cepat Menggunakan OKR</h2>
+            <p>Berikut adalah beberapa tips cepat untuk mengoptimalkan teknik Objectives key & result:</p>
+            <ul>
+                <li>Mulailah dengan OKR Sederhana: Untuk pemula, mulai dari satu atau dua OKR agar lebih mudah dipantau.</li>
+                <li>Prioritaskan Tujuan: Fokuskan OKR pada tujuan belajar yang paling penting atau mendesak.</li>
+                <li>Gunakan Alat Bantu Visualisasi: Buat daftar atau grafik untuk memudahkan pemantauan progres tiap hasil kunci..</li>
+                <li>Revisi Jika Perlu: Tidak masalah untuk merevisi OKR jika ternyata tidak sesuai atau terlalu sulit untuk dicapai.</li>
+            </ul>
+        </section>
+        
+        <section id="Manfaat">
+            <h2>Manfaat dan Kelebihan OKR</h2>
+            <p>Dengan menggunakan teknik OKR, Anda dapat:</p>
+            <ul>
+                <li>Fokus yang Jelas: OKR membantu individu atau tim fokus pada tujuan utama dengan memberikan arah yang jelas. Ini mengurangi kebingungan tentang apa yang harus dicapai.</li>
+                <li>Pengukuran Kinerja: Dengan hasil kunci yang terukur, OKR memudahkan untuk mengevaluasi kemajuan dan kinerja. Ini memberikan gambaran yang lebih jelas tentang sejauh mana tujuan telah dicapai.</li>
+                <li>Fleksibilitas: OKR dapat disesuaikan dan diperbarui dengan mudah sesuai kebutuhan. Ini memungkinkan individu dan tim untuk merespons perubahan kondisi dan prioritas.</li>
+            </ul>
+            <p>Dengan cara kerja ini, OKR tidak hanya membantu dalam menetapkan tujuan, tetapi juga dalam memberikan fokus dan struktur untuk mencapai hasil yang diinginkan.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tips Belajar Efektif | All Rights Reserved</p>
+
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter (X)">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
