@@ -28,23 +28,41 @@
             text-align: center;
         }
 
-        header {
-            background-color: #2E073F;
-            color: #EBD3F8;
-            padding: 20px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: relative;
-        }
+      .navbar {
+        justify-content: space-between;
+        display: flex;
+        border-bottom: 2px solid #608bc1;
+        background-color: #133e87; /* Warna latar belakang header */
+        padding: 15px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999;
+      }
 
-        header h1 {
-            font-size: 2.5rem;
-            color: #AD49E1;
-        }
+      .navbar-logo {
+        color: #608bc1; /* Warna navbar */
+        padding: 10px;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 600;
+      }
 
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
+      .navbar-nav a {
+        color: #ffffff; /* Warna tautan di navbar */
+        text-decoration: none;
+        margin: 0 15px;
+        display: inline-block;
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+
+      .navbar-nav a:hover {
+        color: #cbdceb; /* Warna saat hover */
+      }
+
 
         .cta-button {
             margin-top: 20px;
@@ -206,15 +224,16 @@
     </style>
 </head>
 <body>
-
-    <header>
-        <div class="container">
-            <h1>Selamat Datang di Tips Belajar Efektif</h1>
-            <p>Dapatkan tips dan trik terbaik untuk belajar secara efisien dan produktif!</p>
-            <!-- Toggle Button for Dark Mode (Using Emoji) -->
-            <button class="toggle-button" id="dark-mode-toggle">&#9728;</button> <!-- Matahari Icon -->
-        </div>
-    </header>
+        <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-logo">StudiTips</div>
+      <div class="navbar-nav">
+        <a href="#tips">Tips</a>
+        <a href="#Quotes">Quotes</a>
+        <a href="#categories">Kategori</a>
+        <a href="profil.html">Profil</a>
+      </div>
+    </nav>
 
     <div class="hero">
         <div class="hero-text">Siap Menjadi Pelajar Terbaik?</div>
