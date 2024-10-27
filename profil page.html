@@ -11,32 +11,48 @@
             background-color: whitesmoke;
             font-family: Arial, sans-serif;
         }
-        .Navbar-box {
-            background-color: #687EFF;
-            width: 100%;
-            height: 100px;
-        }
-        .Navbar-text {
-            display: flex;
-            margin: 10px;
-            justify-content: flex-end;
-            padding: 20px;
-        }
-        .Navbar-text a {
-            color: white;
-            text-decoration: none;
-            padding: 20px;
-            margin: 5px;
-        }
-        .Navbar-text a:hover {
-            background-color: #27005D;
-        }
+        .navbar {
+        justify-content: space-between;
+        display: flex;
+        border-bottom: 2px solid #608bc1;
+        background-color: #133e87; /* Warna latar belakang header */
+        padding: 15px;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999;
+      }
+
+      .navbar-logo {
+        color: #608bc1; /* Warna navbar */
+        padding: 10px;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      .navbar-nav a {
+        color: #ffffff; /* Warna tautan di navbar */
+        text-decoration: none;
+        margin: 0 15px;
+        display: inline-block;
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+
+      .navbar-nav a:hover {
+        color: #cbdceb; /* Warna saat hover */
+      }
+
         .container {
             display: flex;
-            background-color: rgb(201, 232, 253);
+            background-color: rgb(214, 225, 232);
+            margin-top: 80px;
         }
         .sidebar-profile {
-            background-color: rgba(69, 123, 240, 0.788);
+            background-color: #c3d8f0;
             width: 400px;
             height: 550px;
             display: flex;
@@ -44,6 +60,10 @@
             margin-right: 20px;
             text-align: center;
             padding-top: 10px;
+        }
+        .sp-text h3 {
+            margin-top: 40px;
+            font-weight: 600;
         }
         .sp-text img {
             border-radius: 50%;
@@ -111,14 +131,16 @@
     </style>
 </head>
 <body>
-    <div class="Navbar-box">
-        <div class="Navbar-text">
-            <a href="#">Home</a>
-            <a href="#">Tips</a>
-            <a href="#">Kategori</a>
-            <a href="#">Log out</a>
+    <nav class="navbar">
+        <div class="navbar-logo">StudiTips</div>
+        <div class="navbar-nav">
+          <a href="#tips">Tips</a>
+          <a href="#Quotes">Quotes</a>
+          <a href="#categories">Kategori</a>
+          <a href="profil.html">Profil</a>
         </div>
-    </div>
+      </nav>
+
     <div class="container">
         <div class="sidebar-profile">
             <div class="sp-text">
