@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- Menentukan tipe dokumen sebagai HTML5 -->
+<html lang="id"> <!-- Mendefinisikan bahasa halaman sebagai bahasa Indonesia -->
+<head>
+    <meta charset="UTF-8"> <!-- Mengatur encoding karakter menjadi UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Memastikan tampilan responsif pada perangkat mobile -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Menginstruksikan Internet Explorer untuk menggunakan mode edge -->
+    <title>Register - Tips Belajar Efektif</title> <!-- Menetapkan judul halaman yang muncul di tab browser -->
+    <style>
+        /* Reset margin dan padding untuk seluruh elemen */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Mengatur model box-sizing menjadi border-box untuk kontrol padding */
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* Mengatur font utama menjadi Arial */
+            line-height: 1.6; /* Mengatur tinggi baris teks */
+            background-color: #F3F3E0; /* Warna latar belakang lembut */
+            display: flex; /* Menggunakan flexbox untuk memusatkan form */
+            justify-content: center; /* Merata tengah secara horizontal */
+            align-items: center; /* Merata tengah secara vertikal */
+            height: 100vh; /* Tinggi viewport 100% untuk memenuhi layar */
+        }
+
+        .register-container {
+            background-color: #FFFFFF; /* Warna latar belakang kotak form */
+            padding: 20px; /* Jarak di dalam kontainer registrasi */
+            border-radius: 10px; /* Membuat sudut kontainer melengkung */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Menambahkan bayangan untuk efek 3D */
+            width: 300px; /* Menentukan lebar tetap kontainer */
+        }
+
+        h1 {
+            text-align: center; /* Merata tengah judul */
+            color: #133E87; /* Warna teks judul */
+            margin-bottom: 20px; /* Jarak bawah untuk memisahkan judul dari elemen berikutnya */
+        }
+
+        label {
+            display: block; /* Menampilkan label sebagai elemen blok */
+            margin-bottom: 5px; /* Jarak bawah untuk memisahkan label dan input */
+            color: #133E87; /* Warna teks label */
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%; /* Lebar input mengikuti lebar kontainer */
+            padding: 10px; /* Jarak dalam input */
+            margin-bottom: 20px; /* Jarak bawah untuk memisahkan input */
+            border: 1px solid #608BC1; /* Warna dan ukuran garis border */
+            border-radius: 5px; /* Membuat sudut input melengkung */
+        }
+
+        .register-button {
+            width: 100%; /* Lebar tombol mengikuti lebar kontainer */
+            padding: 10px; /* Jarak dalam tombol */
+            background-color: #608BC1; /* Warna latar tombol */
+            color: #F3F3E0; /* Warna teks pada tombol */
+            border: none; /* Menghilangkan garis border */
+            border-radius: 5px; /* Membuat sudut tombol melengkung */
+            cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
+            transition: background-color 0.3s; /* Animasi perubahan warna saat hover */
+        }
+
+        .register-button:hover {
+            background-color: #CBDCEB; /* Warna latar tombol saat di-hover */
+            color: #133E87; /* Warna teks tombol saat di-hover */
+        }
+
+        .footer {
+            text-align: center; /* Merata tengah teks footer */
+            margin-top: 20px; /* Memberi jarak atas pada footer */
+        }
+
+        .footer a {
+            color: #608BC1; /* Warna tautan dalam footer */
+            text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+        }
+
+        .footer a:hover {
+            text-decoration: underline; /* Menampilkan garis bawah saat hover pada tautan */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="register-container">
+        <h1>Register</h1> <!-- Judul utama di halaman register -->
+        <form action="confirmation.html" method="POST"> <!-- Formulir registrasi, mengarahkan ke halaman konfirmasi setelah submit, dengan perbaikan nama file tujuan -->
+            <label for="fullname">Nama Lengkap</label> <!-- Label untuk input nama lengkap -->
+            <input type="text" id="fullname" name="fullname" required placeholder="Masukkan nama lengkap"> <!-- Input untuk nama lengkap dengan placeholder -->
+
+            <label for="email">Email</label> <!-- Label untuk input email -->
+            <input type="email" id="email" name="email" required placeholder="Masukkan email"> <!-- Input untuk email dengan placeholder -->
+
+            <label for="username">Nama Pengguna</label> <!-- Label untuk input username -->
+            <input type="text" id="username" name="username" required placeholder="Masukkan nama pengguna"> <!-- Input untuk username dengan placeholder -->
+
+            <label for="password">Kata Sandi</label> <!-- Label untuk input password -->
+            <input type="password" id="password" name="password" required placeholder="Masukkan kata sandi"> <!-- Input untuk password dengan placeholder -->
+
+            <button type="submit" class="register-button">Daftar</button> <!-- Tombol untuk mengirim form -->
+        </form>
+
+        <div class="footer">
+            <p>Sudah memiliki akun? <a href="login.html">Login di sini</a></p> <!-- Link untuk halaman login -->
+        </div>
+    </div>
+
+</body>
+</html>
