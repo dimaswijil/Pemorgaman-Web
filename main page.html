@@ -1,208 +1,144 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Halaman Utama - Tips Belajar Efektif</title>
-    
+
     <!-- Font Awesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <style>
-        /* Reset margin dan padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #EBD3F8;
-        }
-
-        header {
-            background-color: #2E073F;
-            color: #EBD3F8;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-        }
-
-        nav {
-            background-color: #7A1CAC;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #EBD3F8;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1rem;
-        }
-
-        nav a:hover {
-            color: #AD49E1;
-        }
-
-        .main-content {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .main-content h2 {
-            color: #2E073F;
-            margin-bottom: 20px;
-        }
-
-        .main-content p {
-            color: #2E073F;
-            margin-bottom: 20px;
-            font-size: 1.2rem;
-        }
-
-        .tips-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .tip {
-            background-color: #FFFFFF;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .tip h3 {
-            color: #7A1CAC;
-            margin-bottom: 10px;
-        }
-
-        .tip p {
-            color: #2E073F;
-            font-size: 1rem;
-        }
-
-        footer {
-            background-color: #2E073F;
-            color: #EBD3F8;
-            padding: 20px 0;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        footer .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        footer p {
-            margin: 5px 0;
-            font-size: 0.9rem;
-        }
-
-        footer .social-icons {
-            margin-top: 10px;
-        }
-
-        footer .social-icons a {
-            color: #EBD3F8;
-            text-decoration: none;
-            font-size: 1.5rem;
-            margin: 0 15px;
-            transition: color 0.3s;
-        }
-
-        footer .social-icons a:hover {
-            color: #AD49E1;
-        }
-
-        footer .social-icons i {
-            font-size: 2rem;
-        }
-
-        @media (max-width: 768px) {
-            .main-content {
-                padding: 10px;
-            }
-
-            .main-content p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
 </head>
+
 <body>
-
-    <header>
-        <h1>Tips Belajar Efektif</h1>
-    </header>
-
     <!-- Navbar -->
-    <nav>
-        <a href="#tips">Tips</a>
-        <a href="#categories">Kategori</a>
-        <a href="#profile">Profil</a>
-        <a href="logout.html">Logout</a>
+    <nav class="navbar">
+        <div class="navbar-logo">StudiTips</div>
+        <div class="navbar-nav">
+            <a href="main_page.html">Home</a>
+            <a href="profil.html">Profil</a>
+            <a href="#metode">Metode</a>
+            <a href="#sign in">sign in</a>
+        </div>
     </nav>
 
-    <div class="main-content">
-        <h2>Selamat Datang di Tips Belajar Efektif!</h2>
-        <p>Temukan berbagai tips belajar yang dapat membantumu mencapai hasil maksimal dalam belajar.</p>
-
-        <!-- Grid of Tips -->
-        <section id="tips">
-            <h2>Kumpulan Tips</h2>
-            <div class="tips-grid">
-                <div class="tip">
-                    <h3>Manajemen Waktu</h3>
-                    <p>Atur waktu belajarmu dengan efektif. Gunakan teknik Pomodoro atau buat jadwal harian agar tidak ada waktu yang terbuang.</p>
-                </div>
-
-                <div class="tip">
-                    <h3>Cara Membuat Catatan</h3>
-                    <p>Buat catatan yang ringkas namun jelas. Gunakan warna dan simbol untuk menandai bagian penting.</p>
-                </div>
-
-                <div class="tip">
-                    <h3>Persiapan Ujian</h3>
-                    <p>Mulailah belajar jauh-jauh hari. Jangan menunda-nunda, dan gunakan latihan soal untuk mengukur pemahamanmu.</p>
-                </div>
-
-                <div class="tip">
-                    <h3>Fokus dan Konsentrasi</h3>
-                    <p>Temukan lingkungan yang tenang dan bebas dari gangguan untuk belajar. Hindari media sosial dan buat target harian.</p>
-                </div>
+    <section class="hero" id="home">
+        <div class="mask-container">
+            <div class="content">
+                <h1>Selamat Datang di Tips Belajar Efektif <span>!!!</span></h1>
+                <p>Temukan berbagai tips belajar yang dapat membantumu mencapai hasil maksimal dalam belajar.</p>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+  
+    <!-- Hero Section end -->
 
-    <!-- Footer -->
+    <!-- Grid of Tips -->
+    <section class="tips-box" id="tips">
+        <h2>Kumpulan Tips</h2>
+        <div class="tips-grid">
+            <div class="tip">
+                <h3>Manajemen Waktu</h3>
+                <p>Atur waktu belajarmu dengan efektif. Gunakan teknik Pomodoro untuk meningkatkan fokus.</p>
+            </div>
+            <div class="tip">
+                <h3>Membuat Catatan</h3>
+                <p>Buat catatan yang ringkas namun jelas. Gunakan warna untuk menandai informasi penting.</p>
+            </div>
+            <div class="tip">
+                <h3>Persiapan Ujian</h3>
+                <p>Mulailah belajar jauh-jauh hari sebelum ujian. Jangan menunda-nunda.</p>
+            </div>
+            <div class="tip">
+                <h3>Fokus dan Konsentrasi</h3>
+                <p>Cari lingkungan yang tenang dan bebas dari gangguan untuk belajar.</p>
+            </div>
+            <div class="tip">
+              <h3>Latihan Soal</h3>
+              <p>
+                Gunakan latihan soal untuk mengukur pemahamanmu terhadap materi.
+              </p>
+            </div>
+            <div class="tip">
+              <h3>Teknik Mind Mapping</h3>
+              <p>
+                Buat peta pikiran untuk membantu mengorganisir ide-ide dan
+                informasi.
+              </p>
+            </div>
+            <div class="tip">
+              <h3>Berkelompok</h3>
+              <p>
+                Belajar dalam kelompok untuk saling berbagi pengetahuan dan
+                strategi.
+              </p>
+            </div>
+            <div class="tip">
+              <h3>Membaca Aktif</h3>
+              <p>Ajukan pertanyaan saat membaca untuk meningkatkan pemahaman.</p>
+            </div>
+            <div class="tip">
+              <h3>Menggunakan Aplikasi Pembelajaran</h3>
+              <p>
+                Manfaatkan aplikasi untuk membantu mengatur jadwal belajar dan
+                kuis.
+              </p>
+            </div>
+            <div class="tip">
+              <h3>Istirahat yang Cukup</h3>
+              <p>Ambil istirahat secara teratur agar otakmu tetap segar.</p>
+            </div>
+            <div class="tip">
+              <h3>Belajar dengan Mengajar</h3>
+              <p>Cobalah untuk mengajarkan materi kepada orang lain.</p>
+            </div>
+            <div class="tip">
+              <h3>Mengatur Tujuan</h3>
+              <p>Tentukan tujuan belajar yang spesifik dan terukur.</p>
+            </div>
+            <div class="tip">
+              <h3>Rutin Mengulas</h3>
+              <p>Luangkan waktu untuk mengulas materi secara berkala.</p>
+            </div>
+            <div class="tip">
+              <h3>Menghindari Multitasking</h3>
+              <p>Fokus pada satu tugas untuk hasil yang lebih baik.</p>
+            </div>
+            <div class="tip">
+              <h3>Menggunakan Sumber Belajar Beragam</h3>
+              <p>Manfaatkan buku, video, dan sumber online untuk belajar.</p>
+            </div>    
+        </div>
+    </section>
+
+    <!-- Quotes Section -->
+    <section id="quotes">
+        <h2>Quotes Inspiratif</h2>
+        <p>"Belajar adalah pengalaman yang lebih baik daripada apa pun yang dapat dilakukan oleh pengalaman lain." - Albert Einstein</p>
+        <p>"Kebangkitan pendidikan adalah kebangkitan masyarakat." - Unbekannt</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Kategori</h2>
+        <p>Berikut adalah beberapa kategori tips yang dapat Anda pilih:</p>
+        <ul>
+            <li><a href="#study-skills">Keterampilan Belajar</a></li>
+            <li><a href="#study-techniques">Teknik Belajar</a></li>
+            <li><a href="#study-resources">Sumber Belajar</a></li>
+        </ul>
+    </section>
+
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Tips Belajar Efektif | All Rights Reserved</p>
-
+            <p>&copy; 2024 Tips Belajar Efektif. All Rights Reserved.</p>
             <div class="social-icons">
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank" aria-label="Twitter (X)">
-                    <i class="fab fa-x-twitter"></i>
-                </a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>
-
 </body>
 </html>
- 
