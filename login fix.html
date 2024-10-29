@@ -1,103 +1,103 @@
-<!DOCTYPE html> <!-- Menentukan tipe dokumen sebagai HTML5 -->
-<html lang="id"> <!-- Mendefinisikan bahasa halaman sebagai bahasa Indonesia -->
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8"> <!-- Mengatur encoding karakter menjadi UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Memastikan tampilan responsif pada perangkat mobile -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Menginstruksikan Internet Explorer untuk menggunakan mode edge -->
-    <title>Login - Tips Belajar Efektif</title> <!-- Menetapkan judul halaman yang muncul di tab browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Tips Belajar Efektif</title>
     <style>
-        /* Reset margin dan padding untuk seluruh elemen */
+        /* Reset margin dan padding */
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box; /* Mengatur model box-sizing menjadi border-box untuk kontrol padding */
+            box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, sans-serif; /* Mengatur font utama menjadi Arial */
-            line-height: 1.6; /* Mengatur tinggi baris teks */
-            background-color: #F3F3E0; /* Warna latar belakang lembut */
-            display: flex; /* Menggunakan flexbox untuk memusatkan form */
-            justify-content: center; /* Merata tengah secara horizontal */
-            align-items: center; /* Merata tengah secara vertikal */
-            height: 100vh; /* Tinggi viewport 100% untuk memenuhi layar */
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #F3F3E0; /* Warna latar belakang yang lembut */
+            display: flex; /* Menggunakan flexbox untuk center form */
+            justify-content: center; /* Rata tengah horizontal */
+            align-items: center; /* Rata tengah vertikal */
+            height: 100vh; /* Memenuhi tinggi viewport */
         }
 
         .login-container {
-            background-color: #FFFFFF; /* Warna latar belakang kotak form */
-            padding: 20px; /* Jarak di dalam kontainer login */
-            border-radius: 10px; /* Membuat sudut kontainer melengkung */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Menambahkan bayangan untuk efek 3D */
-            width: 300px; /* Menentukan lebar tetap kontainer */
+            background-color: #B0C4DE; /* Warna latar belakang form */
+            padding: 20px; /* Padding untuk form */
+            border-radius: 10px; /* Sudut membulat */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Bayangan pada form */
+            width: 300px; /* Lebar form */
         }
 
         h1 {
-            text-align: center; /* Merata tengah judul */
-            color: #133E87; /* Warna teks judul */
-            margin-bottom: 20px; /* Jarak bawah untuk memisahkan judul dari elemen berikutnya */
+            text-align: center; /* Rata tengah untuk judul */
+            color: #133E87; /* Warna judul */
+            margin-bottom: 20px; /* Jarak bawah judul */
         }
 
         label {
-            display: block; /* Menampilkan label sebagai elemen blok */
-            margin-bottom: 5px; /* Jarak bawah untuk memisahkan label dan input */
-            color: #133E87; /* Warna teks label */
+            display: block; /* Menampilkan label sebagai block */
+            margin-bottom: 5px; /* Jarak bawah label */
+            color: #133E87; /* Warna label */
         }
 
         input[type="text"], input[type="password"] {
-            width: 100%; /* Lebar input mengikuti lebar kontainer */
-            padding: 10px; /* Jarak dalam input */
-            margin-bottom: 20px; /* Jarak bawah untuk memisahkan input */
-            border: 1px solid #608BC1; /* Warna dan ukuran garis border */
-            border-radius: 5px; /* Membuat sudut input melengkung */
+            width: 100%; /* Lebar input 100% dari container */
+            padding: 10px; /* Padding untuk input */
+            margin-bottom: 20px; /* Jarak bawah input */
+            border: 1px solid #608BC1; /* Border input */
+            border-radius: 5px; /* Sudut membulat untuk input */
         }
 
         .login-button {
-            width: 100%; /* Lebar tombol mengikuti lebar kontainer */
-            padding: 10px; /* Jarak dalam tombol */
-            background-color: #608BC1; /* Warna latar tombol */
-            color: #F3F3E0; /* Warna teks pada tombol */
-            border: none; /* Menghilangkan garis border */
-            border-radius: 5px; /* Membuat sudut tombol melengkung */
-            cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
-            transition: background-color 0.3s; /* Animasi perubahan warna saat hover */
+            width: 100%; /* Lebar tombol 100% dari container */
+            padding: 10px; /* Padding untuk tombol */
+            background-color: #4979b3; /* Warna tombol */
+            color: #F3F3E0; /* Warna teks tombol */
+            border: none; /* Menghilangkan border */
+            border-radius: 5px; /* Sudut membulat untuk tombol */
+            cursor: pointer; /* Kursor pointer saat hover */
+            transition: background-color 0.3s; /* Transisi warna saat hover */
         }
 
         .login-button:hover {
-            background-color: #CBDCEB; /* Warna latar tombol saat di-hover */
-            color: #133E87; /* Warna teks tombol saat di-hover */
+            background-color: #CBDCEB; /* Warna tombol saat hover */
+            color: #133E87; /* Warna teks tombol saat hover */
         }
 
         .footer {
-            text-align: center; /* Merata tengah teks footer */
-            margin-top: 20px; /* Memberi jarak atas pada footer */
+            text-align: center; /* Rata tengah footer */
+            margin-top: 20px; /* Jarak atas footer */
         }
 
         .footer a {
-            color: #608BC1; /* Warna tautan dalam footer */
-            text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+            color: #4b77ae; /* Warna tautan di footer */
+            text-decoration: none; /* Menghilangkan garis bawah */
         }
 
         .footer a:hover {
-            text-decoration: underline; /* Menampilkan garis bawah saat hover pada tautan */
+            text-decoration: underline; /* Garis bawah saat hover */
         }
     </style>
 </head>
 <body>
 
     <div class="login-container">
-        <h1>Login</h1> <!-- Judul utama di halaman login -->
-        <form action="main_page.html" method="POST"> <!-- Formulir login, mengarahkan ke halaman utama setelah submit -->
-            <label for="username">Nama Pengguna</label> <!-- Label untuk input username -->
-            <input type="text" id="username" name="username" required placeholder="Masukkan nama pengguna"> <!-- Input untuk username dengan placeholder -->
+        <h1>Login</h1> <!-- Judul halaman login -->
+        <form action="main_page.html" method="POST"> <!-- Form untuk login -->
+            <label for="username">Nama Pengguna</label>
+            <input type="text" id="username" name="username" required placeholder="Masukkan nama pengguna"> <!-- Input untuk nama pengguna -->
 
-            <label for="password">Kata Sandi</label> <!-- Label untuk input password -->
-            <input type="password" id="password" name="password" required placeholder="Masukkan kata sandi"> <!-- Input untuk password dengan placeholder -->
+            <label for="password">Kata Sandi</label>
+            <input type="password" id="password" name="password" required placeholder="Masukkan kata sandi"> <!-- Input untuk kata sandi -->
 
-            <button type="submit" class="login-button">Masuk</button> <!-- Tombol untuk mengirim form -->
+            <button type="submit" class="login-button">Masuk</button> <!-- Tombol untuk submit form -->
         </form>
 
         <div class="footer">
-            <p>Belum memiliki akun? <a href="register.html">Daftar di sini</a></p> <!-- Link untuk halaman pendaftaran -->
+            <p>Belum memiliki akun? <a href="register.html">Daftar di sini</a></p> <!-- Tautan untuk pendaftaran -->
         </div>
     </div>
 
