@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Tips Belajar Efektif</title>
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #F3F3E0; /* Warna latar belakang yang lembut */
+            display: flex; /* Menggunakan flexbox untuk center form */
+            justify-content: center; /* Rata tengah horizontal */
+            align-items: center; /* Rata tengah vertikal */
+            height: 100vh; /* Memenuhi tinggi viewport */
+        }
+
+        .login-container {
+            background-color: #B0C4DE; /* Warna latar belakang form */
+            padding: 20px; /* Padding untuk form */
+            border-radius: 10px; /* Sudut membulat */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Bayangan pada form */
+            width: 300px; /* Lebar form */
+        }
+
+        h1 {
+            text-align: center; /* Rata tengah untuk judul */
+            color: #133E87; /* Warna judul */
+            margin-bottom: 20px; /* Jarak bawah judul */
+        }
+
+        label {
+            display: block; /* Menampilkan label sebagai block */
+            margin-bottom: 5px; /* Jarak bawah label */
+            color: #133E87; /* Warna label */
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%; /* Lebar input 100% dari container */
+            padding: 10px; /* Padding untuk input */
+            margin-bottom: 20px; /* Jarak bawah input */
+            border: 1px solid #608BC1; /* Border input */
+            border-radius: 5px; /* Sudut membulat untuk input */
+        }
+
+        .login-button {
+            width: 100%; /* Lebar tombol 100% dari container */
+            padding: 10px; /* Padding untuk tombol */
+            background-color: #4979b3; /* Warna tombol */
+            color: #F3F3E0; /* Warna teks tombol */
+            border: none; /* Menghilangkan border */
+            border-radius: 5px; /* Sudut membulat untuk tombol */
+            cursor: pointer; /* Kursor pointer saat hover */
+            transition: background-color 0.3s; /* Transisi warna saat hover */
+        }
+
+        .login-button:hover {
+            background-color: #CBDCEB; /* Warna tombol saat hover */
+            color: #133E87; /* Warna teks tombol saat hover */
+        }
+
+        .footer {
+            text-align: center; /* Rata tengah footer */
+            margin-top: 20px; /* Jarak atas footer */
+        }
+
+        .footer a {
+            color: #4b77ae; /* Warna tautan di footer */
+            text-decoration: none; /* Menghilangkan garis bawah */
+        }
+
+        .footer a:hover {
+            text-decoration: underline; /* Garis bawah saat hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Login</h1> <!-- Judul halaman login -->
+        <form action="main_page.html" method="POST"> <!-- Form untuk login -->
+            <label for="username">Nama Pengguna</label>
+            <input type="text" id="username" name="username" required placeholder="Masukkan nama pengguna"> <!-- Input untuk nama pengguna -->
+
+            <label for="password">Kata Sandi</label>
+            <input type="password" id="password" name="password" required placeholder="Masukkan kata sandi"> <!-- Input untuk kata sandi -->
+
+            <button type="submit" class="login-button">Masuk</button> <!-- Tombol untuk submit form -->
+        </form>
+
+        <div class="footer">
+            <p>Belum memiliki akun? <a href="register.html">Daftar di sini</a></p> <!-- Tautan untuk pendaftaran -->
+        </div>
+    </div>
+
+</body>
+</html>

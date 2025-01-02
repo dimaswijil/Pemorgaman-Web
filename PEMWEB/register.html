@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register - Tips Belajar Efektif</title>
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #F3F3E0; /* Warna latar belakang yang lembut */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background-color: #B0C4DE; /* Warna latar belakang form */
+            padding: 20px; /* Padding untuk form */
+            border-radius: 10px; /* Sudut membulat */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Bayangan pada form */
+            width: 300px; /* Lebar form */
+        }
+
+        h1 {
+            text-align: center; /* Rata tengah untuk judul */
+            color: #133E87; /* Warna judul */
+            margin-bottom: 20px; /* Jarak bawah judul */
+        }
+
+        label {
+            display: block; /* Menampilkan label sebagai block */
+            margin-bottom: 5px; /* Jarak bawah label */
+            color: #133E87; /* Warna label */
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%; /* Lebar input 100% dari container */
+            padding: 10px; /* Padding untuk input */
+            margin-bottom: 20px; /* Jarak bawah input */
+            border: 1px solid #608BC1; /* Border input */
+            border-radius: 5px; /* Sudut membulat untuk input */
+        }
+
+        .error {
+            color: red;
+            font-size: 0.875rem;
+            margin-top: -15px;
+            margin-bottom: 15px;
+        }
+
+        .register-button {
+            width: 100%; /* Lebar tombol 100% dari container */
+            padding: 10px; /* Padding untuk tombol */
+            background-color: #4979b3; /* Warna tombol */
+            color: #F3F3E0; /* Warna teks tombol */
+            border: none; /* Menghilangkan border */
+            border-radius: 5px; /* Sudut membulat untuk tombol */
+            cursor: pointer; /* Kursor pointer saat hover */
+            transition: background-color 0.3s; /* Transisi warna saat hover */
+        }
+
+        .register-button:hover {
+            background-color: #CBDCEB; /* Warna tombol saat hover */
+            color: #133E87; /* Warna teks tombol saat hover */
+        }
+
+        .footer {
+            text-align: center; /* Rata tengah footer */
+            margin-top: 20px; /* Jarak atas footer */
+        }
+
+        .footer a {
+            color: #4b77ae; /* Warna tautan di footer */
+            text-decoration: none; /* Menghilangkan garis bawah */
+        }
+
+        .footer a:hover {
+            text-decoration: underline; /* Garis bawah saat hover */
+        }
+    </style>
+
+    <script>
+        function validateForm(event) {
+            const fullname = document.getElementById('fullname');
+            const email = document.getElementById('email');
+            const username = document.getElementById('username');
+            const password = document.getElementById('password');
+            let isValid = true;
+
+            // Reset semua pesan error
+            document.querySelectorAll('.error').forEach(error => error.remove());
+
+            // Validasi Nama Lengkap
+            if (fullname.value.trim() === '') {
+                showError(fullname, 'Nama lengkap wajib diisi.');
+                isValid = false;
+            }
+
+            // Validasi Email
+            if (!validateEmail(email.value)) {
+                showError(email, 'Email tidak valid.');
+                isValid = false;
+            }
+
+            // Validasi Nama Pengguna
+            if (username.value.trim() === '') {
+                showError(username, 'Nama pengguna wajib diisi.');
+                isValid = false;
+            }
+
+            // Validasi Kata Sandi
+            if (password.value.length < 6) {
+                showError(password, 'Kata sandi harus memiliki minimal 6 karakter.');
+                isValid = false;
+            }
+
+            if (!isValid) {
+                event.preventDefault(); // Mencegah form terkirim jika tidak valid
+            }
+        }
+
+        function showError(input, message) {
+            const error = document.createElement('div');
+            error.className = 'error';
+            error.textContent = message;
+            input.parentNode.insertBefore(error, input.nextSibling);
+        }
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', validateForm);
+        });
+    </script>
+</head>
+<body>
+
+    <div class="register-container">
+        <h1>Register</h1>
+        <form action="corfirmation.html" method="POST">
+            <label for="fullname">Nama Lengkap</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Masukkan nama lengkap">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Masukkan email">
+
+            <label for="username">Nama Pengguna</label>
+            <input type="text" id="username" name="username" required placeholder="Masukkan nama pengguna">
+
+            <label for="password">Kata Sandi</label>
+            <input type="password" id="password" name="password" required placeholder="Masukkan kata sandi">
+
+            <button type="submit" class="register-button">Daftar</button>
+        </form>
+
+        <div class="footer">
+            <p>Sudah memiliki akun? <a href="login.html">Login di sini</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

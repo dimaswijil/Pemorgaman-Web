@@ -1,0 +1,175 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b7c8dd; /* Warna latar belakang yang lembut */
+    color: #133e87; /* Warna teks default */
+}
+
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 2px solid #B0D0D3;
+    background-color: #1A374D; /* Warna latar belakang header */
+    padding: 15px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.navbar-logo {
+    color: #B0D0D3; /* Warna navbar */
+    padding: 10px;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.navbar-nav a {
+    color: #B0D0D3; /* Warna tautan di navbar */
+    text-decoration: none;
+    margin: 0 15px;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.navbar-nav a:hover {
+    color: #AAB396; /* Warna saat hover */
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('image/belajar2.jpg'); /* Gambar latar belakang */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    background-position: center;
+    position: relative;
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)); /* Gradasi dari putih ke hitam */
+    z-index: 1;
+}
+
+.hero .mask-container {
+    position: absolute;
+    inset: 0;
+    display: flex; /* Menjaga konten tetap di tengah */
+    align-items: center;
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    z-index: 2;
+}
+
+.hero .content {
+    text-align: center;
+    z-index: 4; /* Z-index untuk menjadikan teks di atas gradasi */
+    color: #1A374D; /* Warna teks */
+}
+
+.hero .content h1 {
+    font-size: 3.3rem; /* Ukuran font */
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Bayangan untuk kontras */
+}
+
+.hero .content p {
+    font-size: 1.4rem; /* Ukuran font untuk paragraf */
+    margin-top: 1rem;
+    word-spacing: 2%;
+    color: #E0E0E0;
+    line-height: 1.4;
+}
+
+/* Tips Section */
+.tips-box {
+    padding: 40px 20px; /* Ruang di sekitar bagian tips */
+    color: #133E87;
+}
+
+.tips-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Jarak antar tips */
+    margin: 30px auto; /* Margin untuk pusatkan grid */
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.tip {
+    background-color: #f1f1f1d0; /* Warna latar belakang kartu tips */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Memusatkan teks dalam kartu */
+}
+
+.tip h3 {
+    color: #163b69; /* Warna judul tips */
+    margin-bottom: 10px;
+}
+
+.tip p {
+    color: #133E87; /* Warna teks dalam tips */
+    font-size: 1rem;
+}
+
+/* Quotes Section */
+#quotes {
+    text-align: center; /* Memusatkan teks */
+    margin: 20px 0; /* Menambah margin untuk jarak vertikal */
+}
+
+/* Categories Section */
+#categories {
+    text-align: center; /* Memusatkan teks */
+    margin: 20px 0; /* Menambah margin untuk jarak vertikal */
+}
+
+/* Footer */
+footer {
+    background-color: #1A374D; /* Warna footer */
+    color: #FFFFFF; /* Warna teks di footer */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #FFFFFF; /* Warna tautan sosial */

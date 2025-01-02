@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategeori</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E2DAD6;
+    color: #EF4F6F;
+}
+
+header {
+    background: #7FA1C3;
+    color: #091057;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+        nav {
+            background-color: #091057;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #FDFAD9;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+
+
+        main {
+            margin: 20px auto;
+            padding: 30px;
+            color: #2E073F;
+            background: #ffffff;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+h1, h2 {
+    color: #35424a;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+            background-color: #091057;
+            color: #FDFAD9;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        footer .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            color: #EBD3F8;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: #AD49E1;
+        }
+
+        footer .social-icons i {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 10px;
+            }
+
+            .main-content p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+ </head>
+ <body>
+</html>
+</head>
+<body>
+    <header>
+        <h1>Kategori</h1>
+        <nav>
+            <ul>
+                <li><a href="#pomodoro">Teknik Pomodoro</a></li>
+                <li><a href="#eat-the-frog">Teknik Eat The Frog</a></li>
+                <li><a href="#gtd">Teknik GTD</a></li>
+                <li><a href="#kanban">Teknik Kanban</a></li>
+                <li><a href="#time-blocking">Teknik Time Blocking</a></li>
+                <li><a href="#okr">Objective Key & Result</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+    <main>
+        <div class="card" id="pomodoro">
+            <h2>Teknik Pomodoro</h2>
+            <a href="pomodoro.html" class="toggle-content">Tampilkan Isi</a>
+            <div class="content">
+                <p>Teknik Pomodoro adalah metode manajemen waktu yang dibagi menjadi interval, biasanya 25 menit, diikuti dengan istirahat singkat.</p>
+            </div>
+        </div>
+
+        <div class="card" id="eat-the-frog">
+            <h2>Teknik Eat The Frog</h2>
+            <a href="eatthefrog.html" class="toggle-content">Tampilkan Isi</a>
+            <div class="content">
+                <p>Teknik ini mendorong Anda untuk menyelesaikan tugas yang paling sulit dan tidak menyenangkan terlebih dahulu.</p>
+            </div>
+        </div>
+
+        <div class="card" id="gtd">
+            <h2>Teknik GTD</h2>
+            <a href="gtd.html" class="toggle-content">Tampilkan Isi</a>
+            <div class="content">
+                <p>GTD (Getting Things Done) adalah metode untuk mengelola tugas dan proyek dengan cara yang terorganisir.</p>
+            </div>
+        </div>
+
+        <div class="card" id="kanban">
+            <h2>Teknik Kanban</h2>
+            <a href="kanban.html" class="toggle-content">Tampilkan Isi</a>
+            <div class="content">
+                <p>Kanban adalah alur kerja produktivitas visual yang menggunakan papan dan kartu.</p>
+            </div>
+        </div>   
+
+        <div class="card" id="time-blocking">
+            <h2>Teknik Time Blocking</h2>
+            <a href="timeblocking.html" class="toggle-content">Tampilkan Isi</a>
+            <div class="content">
+                <p>Teknik manajemen waktu yang melibatkan pembagian kerja menjadi blok waktu.</p>
+            </div>
+        </div>
+
+        
+        <div class="card" id="okr">
+            <h2>Objective Key & Result</h2>
+            <a href="okr.html" class="toggle-content">Tampilkan Isi</a>
+            <div class="content">
+            <p>Teknik manajemen yang menentukan tujuan (objective) dan hasil kunci (key result) yang terukur.</p>
+            </div>
+        </div>
+
+                <footer>
+                    <p>&copy; 2024 - All rights reserved.</p>
+                    <div class="social-icons">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </footer>
